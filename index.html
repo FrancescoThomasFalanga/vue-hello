@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VUE HELLO</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
@@ -12,7 +14,17 @@
 
     <div id="app">
 
-        
+        <div class="container">
+
+            <h1 :class="titleClass">
+                {{titleText}}
+            </h1>
+    
+            <img :src="bgImage" :class="imgClass" alt="Cane Coca-Cola">
+
+            <button @click="changeImg" :class="btnClass">Cambia immagine</button>
+
+        </div>
 
     </div>
 
